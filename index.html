@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div>
+      <h1 style="text-align: center">JavaScript</h1>
+      <p id="intro">
+        JavaScript (js) is a light-weight object-oriented programming language
+        which is used by several websites for scripting the webpages. It is an
+        interpreted, full-fledged programming language that enables dynamic
+        interactivity on websites when applied to an HTML document. It was
+        introduced in the year 1995 for adding programs to the webpages in the
+        Netscape navigato browser.Since then, it has been adopted by all other
+        graphical web browsers. With JavaScript, users can build modern web
+        applications to interact directly without reloading the page every time.
+      </p>
+    </div>
+    <div>
+      <h2>JavaScript Fundamentals</h2>
+      <ol style="margin: 0px">
+        <li><a href="#run">How to run JavaScript file</a></li>
+        <li><a href="#var">Variables</a></li>
+      </ol>
+      <p id="run">
+        <label
+          ><mark
+            ><b
+              >How to run JavaScript in &lt;head&gt; or &lt;body&gt; :</b
+            ></mark
+          > </label
+        >This section will guilde you how we need to work with environment to
+        run our script. So first, let's see how we can attach a script to a
+        webpage. For server-side environments(like Node.js),you can execute the
+        script with a command like "node hello.js" <br />You can place any nuber
+        of scripts in an HTML document.Scripts can be placed in the
+        &lt;body&gt;or in the &lt;head&gt;section of an HTML page,or in both.<br />
+      </p>
+    </div>
+    <div>
+      <h3>JavaScript in &lt;head&gt;&nbsp;and &nbsp;&lt;body&gt;</h3>
+      <p>
+        JavaScript can be place right inside the head section of html with
+        &lt;script&gt;&nbsp; //your code &lt;&nbsp;/script&gt;<br />
+        JavaScript can also place right inside the body section of html with
+        &lt;script&gt;&nbsp; //your code &lt;&nbsp;/script&gt;
+      </p>
+      <h3>External JavaScript</h3>
+      <p>
+        External JavaScript are practical when the same code is used in many
+        different web pages. JavaScript files have the file extention .js<br />
+        To use an external script, put the name of the script file in the src
+        attribute of &lt;script&gt;tag.&nbsp;Ex:&nbsp;&lt;script
+        src="hello.js"&gt;<br />
+        <label><b>NOTE:</b></label
+        >External javascript files can be palced in head and body section of
+        HTML and there is no limit of linking external javascript files inside
+        the HTML body or head.
+      </p>
+      <hr>
+    </div>
+    <div id="var">
+      <p>
+        <label><mark><b>Variables :</b></mark></label>
+        variable is a "named storage" for data. we can use vaibales to store the information.<br/>
+        To create variable in JavaScript use the <mark>let</mark> keyword.<br/>
+        The statment below creates (in other words:<i>declares</i>) a variable with the name "message":<br>
+        <span style="color:rgb(0, 132, 255)">let </span>message;<br>
+        Now, we can put some data into it by using the assignment operator =:<br>
+        message = "Welcome to JavaScript";<br>
+        The string is now saved into the memory area associated with the variable.We can access it using the variable name:<br>
+        alert(message);
+        <p>
+          <h3>various ways to declare the variables in javascript</h3>
+          <ul><li>single line variable :</li></ul>
+          <span style="color:rgb(0, 132, 255)">let </span>message = "Welcome to JavaScript";
+          <ul><li>Multiple variables :</li></ul>
+          let user = "john", age = 20 , gender = "male";<br><br>
+          let user = "john",<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age = 20 ,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gender= "male";<br><br>
+          or even the comma first aproach.<br>
+          let name = "john"<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,age = 20 <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,gender = "male";<br>
+          <mark>Note :</mark> Variable should be declared only once. A repeated declaration of the same variable is an Error As JavaScript is case-sensitive langeuage.
+
+          <h3>Variable Naming :</h3>
+          There are Two limitation on variable names in javascript <br>
+          1. The name must contain only <code>letters , digits , or the symbols $ and _</code> <br>
+          2. The first charater must not be a digit. ex: 1a = "Hi";
+        </p>
+      </p>
+    </div>
+  </body>
+</html>
